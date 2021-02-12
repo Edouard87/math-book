@@ -1,6 +1,8 @@
 \ProvidesClass{mathbook}[02/03/2021 - A class to help create the math book assignment]
 \NeedsTeXFormat{LaTeX2e}
-\LoadClass{article}
+\LoadClass[twoside]{article}
+\RequirePackage{fancyhdr}
+\RequirePackage{fontspec}
 
 % \newcommand{\@teacher}{\space}
 \newcommand{\@assignmentName}{\space}
@@ -56,4 +58,7 @@
 
 \newcommand{\summary}[1]{\stepcounter{summarycounter}\large{\textbf{Part \thesummarycounter:\space}\emph{Summary}\space #1}\par\vspace{1cm}}
 
-% \newcommand{\summary}[1]{Test}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.5cm}
+\setmainfont{CMU Sans Serif}
+
